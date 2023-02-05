@@ -1,0 +1,12 @@
+<div class="sidebar">
+ <ul *ngFor="let menuItem of menuItems">
+  <li id="{{menuItem.id}}" >
+      <a href="">
+        <span>{{menuItem.title}}</span>
+      </a>
+  </li>
+</ul>
+</div>
+
+
+<!-- {{menuItems | json}} -->
