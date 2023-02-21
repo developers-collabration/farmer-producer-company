@@ -76,6 +76,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     MatToolbarModule,
     MatTooltipModule,
     MatTreeModule,
+    MatFormFieldModule,
   ReactiveFormsModule,
   FormsModule
   ],
@@ -117,6 +118,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
     MatTooltipModule,
     MatTreeModule,
     ReactiveFormsModule,
+    MatFormFieldModule,
     FormsModule
   ]
 })

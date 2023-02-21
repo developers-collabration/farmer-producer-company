@@ -12,6 +12,4 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
     this.menuItems = sideBarRoutes.filter((menuItem)=>menuItem.isVisible);
   }
-
-
 }

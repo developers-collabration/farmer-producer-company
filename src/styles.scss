@@ -3,6 +3,25 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-body{
-    background-color: #EFEFEF;
-}
+body{background-color: #EFEFEF;}
+@import '~@angular/material/theming';
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+@include mat-core();
+
+// Define the primary and accent colors for your theme. These will be used by Angular Material
+// to create the theme styles for your app.
+$my-app-primary: mat-palette($mat-indigo);
+$my-app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// Create the theme object for your app
+$my-app-theme: mat-light-theme((
+  color: (
+    primary: $my-app-primary,
+    accent: $my-app-accent,
+  )
+));
+
+// Apply the theme to your Angular Material components
+@include angular-material-theme($my-app-theme);
